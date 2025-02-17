@@ -27,7 +27,7 @@ body {
 .header {
     font-family: var(--custom-font);
     padding: 0;
-    
+
 
 }
 
@@ -53,12 +53,11 @@ form {
 
 .list-wrapper {
     width: 400px
-    
 }
 
 .input-wrapper {
-    display: flex; 
-    width: 100%; 
+    display: flex;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -149,7 +148,7 @@ input.checkbox {
     appearance: none;
     margin-right: 10px;
     margin-left: 20px;
-    position: relative; 
+    position: relative;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -160,7 +159,7 @@ input.checkbox {
 
 input.checkbox:hover {
     border: 0.5px solid var(--checkbox-hov);
-} 
+}
 
 input.checkbox:checked::after {
     content: '\2713';
@@ -172,7 +171,7 @@ input.checkbox:checked::after {
     transform: translate(-50%, -50%);
 }
 
-li > span {
+li>span {
     flex-grow: 1;
 }
 
@@ -186,6 +185,17 @@ li > span {
     opacity: 0;
 }
 
-li:hover .del-task {
+.edit-task {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 35px;
+    opacity: 0;
+}
+
+li:hover .del-task,
+li:hover .edit-task {
     opacity: 1;
 }
