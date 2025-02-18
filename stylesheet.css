@@ -168,7 +168,7 @@ input.checkbox:checked::after {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 }
 
 li>span {
@@ -198,4 +198,14 @@ li>span {
 li:hover .del-task,
 li:hover .edit-task {
     opacity: 1;
+}
+
+.newInputField {
+    background-color: var(--bg-cards);
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-size: 16px;
+    height: 100%;
+    padding: 0;
 }
