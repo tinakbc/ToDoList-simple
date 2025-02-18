@@ -60,6 +60,8 @@ savedTasks.forEach(task => {
     editButton.addEventListener('click', function () {
         editTask(spanTask, li);
     });
+
+    saveTasks();
 });
 
 // Edit task function
@@ -154,7 +156,8 @@ function addTask() {
     editButton.addEventListener('click', function () {
         editTask(spanTask, li);
     });
-
+    
+    saveTasks();
 
 }
 
