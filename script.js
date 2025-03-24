@@ -69,6 +69,7 @@ function editTask(spanTask, li) {
     const newInputField = document.createElement('input');
     newInputField.classList.add('newInputField');
 
+
     newInputField.value = spanTask.textContent;
     spanTask.replaceWith(newInputField);
 
@@ -149,15 +150,13 @@ function addTask() {
             saveTasks();
         });
 
+        // Edit Button Eventlistener
+        editButton.addEventListener('click', function () {
+            editTask(spanTask, li);
+        });
+
         saveTasks();
     }
-
-    // Edit Button Eventlistener
-    editButton.addEventListener('click', function () {
-        editTask(spanTask, li);
-    });
-    
-    saveTasks();
 
 }
 
