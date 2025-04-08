@@ -157,7 +157,12 @@ function addTask() {
 
         // Edit Button Eventlistener
         editButton.addEventListener('click', function () {
-            editTask(spanTask, li);
+            if (checkbox.checked) {
+                //not editable
+            }
+            else {
+                editTask(spanTask, li);
+            }
         });
 
         saveTasks();
