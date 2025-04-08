@@ -58,7 +58,12 @@ savedTasks.forEach(task => {
 
     // Edit Button Eventlistener
     editButton.addEventListener('click', function () {
-        editTask(spanTask, li);
+        if (checkbox.checked) {
+            //not editable
+        }
+        else {
+            editTask(spanTask, li);
+        }
     });
 
     saveTasks();
