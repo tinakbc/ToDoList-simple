@@ -12,6 +12,12 @@
 
 }
 
+main{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 5vw;
+}
+
 /* body */
 body {
     margin: 4.6% 35% 0%;
@@ -23,11 +29,12 @@ body {
     background-size: 100vw 42vh;
 }
 
+
+
 /* header */
 .header {
     font-family: var(--custom-font);
     padding: 0;
-
 
 }
 
@@ -209,3 +216,38 @@ li:hover .edit-task {
     height: 100%;
     padding: 0;
 }
+
+
+/* mobile view */
+
+@media (max-width: 768px) {
+    
+    
+    body {
+      margin: 0 auto;
+      max-width: 90vw;
+      padding: 0 5vw;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .title-page {
+        width: 100%;
+        justify-content: center;
+      }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    
+    }
+
+    .list-wrapper {
+        width: 100%;
+       max-width: 100%;
+       box-sizing: border-box;
+    }
+  }
